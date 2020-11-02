@@ -3,6 +3,18 @@
 ## UNRELEASED [x.y.z](https://github.com/davidalger/warden/tree/x.y.z) (yyyy-mm-dd)
 [All Commits](https://github.com/davidalger/warden/compare/0.9.1..develop)
 
+**Upgrade Notes:**
+
+* Warden now requires `mutagen` 0.11.8 or later for environments leveraging sync sessions on Mac OS. Reference issue [#235](https://github.com/davidalger/warden/issues/235) for details. This is to resolve an incompatibility between earlier versions of Mutagen and Docker Desktop 2.3.0.5 and later.
+
+**Enhancements:**
+
+* Added ability to provide persistent additional configuration to `dnsmasq` service (issue [#214](https://github.com/davidalger/warden/issues/214))
+* Added ability to easily specify alternate nameservers for `dnsmasq` to use (issue [#214](https://github.com/davidalger/warden/issues/214))
+* Added ability to customize bundled environment compositions by overriding them in the Warden home dir ([#228](https://github.com/davidalger/warden/pull/228) by @k4emic)
+* Added ability to override sync configuration on a per-project basis or provide one on env types such as `local` where default one does not exist ([#246](https://github.com/davidalger/warden/pull/246) by @Den4ik)
+* Updated version of Portainer from 1.24.X to 2.0.X ([#245](https://github.com/davidalger/warden/pull/245) by @ragfire)
+
 ## Version [0.9.1](https://github.com/davidalger/warden/tree/0.9.1) (2020-08-25)
 [All Commits](https://github.com/davidalger/warden/compare/0.9.0..0.9.1)
 
